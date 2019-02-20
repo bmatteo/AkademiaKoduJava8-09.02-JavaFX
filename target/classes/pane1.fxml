@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <FlowPane xmlns="http://javafx.com/javafx"
-          xmlns:fx="http://javafx.com/fxml">
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="pl.academy.code.controllers.Pane1Controller">
     <children>
-        <Button text="Click me !!!!"/>
+        <Button text="Click me !!!!" fx:id="button1" onAction="#someAction"
+                prefHeight="100" prefWidth="250"/>
+
+        <Label text="Jestem Labelka !!" fx:id="label1"
+               prefHeight="100" prefWidth="250"/>
+
+        <Button text="Change scene" fx:id="changeSceneButton" onAction="#changeScene"
+                prefHeight="100" prefWidth="250"/>
     </children>
 </FlowPane>
